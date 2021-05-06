@@ -1,13 +1,13 @@
 package com.iplDashBoard.batch;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 import java.time.LocalDate;
 
 public class MatchProcessor implements ItemProcessor<MatchInput, MatchOutput> {
 
-     private static final Logger log = LoggerFactory.getLogger(MatchProcessor.class);
+     //private static final Logger log = LoggerFactory.getLogger(MatchProcessor.class);
 
         @Override
         public MatchOutput process(final MatchInput matchInput) throws Exception {

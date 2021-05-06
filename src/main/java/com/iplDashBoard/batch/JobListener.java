@@ -30,7 +30,7 @@ public class JobListener extends JobExecutionListenerSupport {
         @Transactional
         public void afterJob(JobExecution jobExecution) {
             if(jobExecution.getStatus() == BatchStatus.COMPLETED) {
-                //log.info("!!! JOB FINISHED! Time to verify the results");
+                log.info("!!! JOB FINISHED! Time to verify the results");
                 List<Team> team = new ArrayList<>();
 
                 List<Object[]> resultList1 = em.createQuery("select distinct m.team1,count(*) " +
